@@ -1,5 +1,5 @@
-public class Hippopotamus {
-    String name;
+public class Hippopotamus extends Animal{
+    //String name;
     String color;
     int weight;
     int age;
@@ -11,15 +11,24 @@ public class Hippopotamus {
         this.age = age;
     }
 
-    public void TopTop(){
-        System.out.println("убежал плавать");
+    public void topTop() {
+        System.out.println("Run away to swim");
     }
 
-    public void SwimSwim(){
-        System.out.println("утонул :(");
+    public void swimSwim() {
+        System.out.println("Under the water");
     }
 
-    public void Watermelon(){
-        System.out.println("Уничтожает арбузы");
+    public void watermelon() {
+        System.out.println("Destroys watermelons");
+    }
+
+    public void lunch() {
+        System.out.println(this + " перекусывает фруктами");
+    }
+
+    @Override
+    public String toString() {
+        return "Hippopotamus (" + "Имя " + name + '\'' + ", Цвет " + color + ", Вес " + weight + ", Возраст "+ age +')';
     }
 }
